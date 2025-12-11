@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title> Кирильченко_ЛР03-3</title>
+    <meta name="description" content="Приклад галереї зображень для оформлення профілю.">
+    <style>
+        body {
+            /* Градієнтний фон, як у попередньому коді */
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            font-family: 'Roboto', "Segoe UI", Arial, sans-serif;
+            color: #1a365d;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #0e4c7d;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0e4c7d;
+            display: inline-block;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Дозволяє блокам переноситися на новий рядок */
+            gap: 40px;
+        }
+
+        .photo-block {
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            width: 300px; /* Фіксована ширина для блоку */
+            transition: transform 0.3s ease;
+        }
+        
+        /* Ефект при наведенні */
+        .photo-block:hover {
+            transform: translateY(-5px); 
+        }
+
+        img {
+            /* Кругле зображення для аватарки */
+            width: 100%; /* Заповнює ширину блоку */
+            height: 270px; /* Фіксована висота */
+            object-fit: cover;
+            border-radius: 50%; /* Кругла форма */
+            border: 4px solid #4eb7e3; /* Блакитна рамка */
+            box-shadow: 0 0 10px rgba(78, 183, 227, 0.5); /* Світіння навколо фото */
+        }
+
+        p {
+            font-style: italic;
+            margin-top: 15px;
+            color: #0e4c7d;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        
+        .signature {
+            margin-top: 60px;
+            text-align: center;
+            font-style: normal;
+            font-size: 1.2em;
+            color: #1a365d;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ідеї оформлення профілю та робочого простору</h1>
+
+    <div class="gallery-container">
+        
+        <div class="photo-block">
+            <img src="photo1.jpg" alt="Аватарка для геймерського профілю">
+            <p>Аватарка для кіберспорту</p>
+        </div>
+
+        <div class="photo-block">
+            <img src="photo2.jpg" alt="Фон для робочого столу (мінімалізм)">
+            <p>Мінімалістичні обої</p>
+        </div>
+
+        <div class="photo-block">
+            <img src="photo3.jpg" alt="Обкладинка для профілю GitHub/LinkedIn">
+            <p>Фото на заставку</p>
+        </div>
+
+</body>
+</html>

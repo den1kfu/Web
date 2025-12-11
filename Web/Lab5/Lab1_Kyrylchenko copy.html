@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна №1. Сторінка про себе</title>
+    <meta name="description" content="Лабораторна робота №1. Веб-сторінка студента Кирильченка Дениса.">
+    <meta name="keywords" content="HTML, C++, студент, кіберспорт, авто">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #2d3748;
+            font-family: "Segoe UI", Arial, sans-serif;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #2c5282;
+            border-bottom: 2px solid #cbd5e0;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: large;
+            line-height: 1.6;
+        }
+
+        a {
+            font-weight: bold;
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #4299e1;
+        }
+
+        .signature {
+            margin-top: 50px;
+            font-style: italic;
+            text-align: right;
+            color: #4a5568;
+            border-top: 1px solid #cbd5e0;
+            padding-top: 10px;
+        }
+
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: "Consolas", "Courier New", monospace;
+            border: 1px solid #4a5568;
+            overflow-x: auto;
+        }
+
+        .code-keyword { color: #f687b3; }
+        .code-type { color: #63b3ed; }
+        .code-comment { color: #68d391; }
+    </style>
+</head>
+
+<body>
+    <h1>Про себе</h1>
+    <p>
+        Мене звати <b><u>Денис</u></b>, я навчаюся на <i>3 курсі</i>. 
+        Вважаю себе цілеспрямованою людиною, яка завжди доводить почате до <b>кінця</b>.
+    </p>
+
+    <h1>Мої інтереси</h1>
+    <p>
+        Вільний від навчання та роботи час я часто проводжу за комп'ютером. 
+        Захоплююся <b>кіберспортом</b>, слідкую за світовими турнірами з <u>CS2</u> та іноді сам беру участь у різних міні-турнірах. 
+        Це допомагає розвивати реакцію та командну взаємодію.
+    </p>
+    <p>
+        Іншим моїм великим захопленням є <b><i>Motion Design</i></b>. 
+        Мені подобається розбиратися в різних відеоредакторах. 
+        У майбутньому планую придбати мощний пк, щоб більш детально дослідити цю сферу.
+    </p>
+
+    <h2>Програмування (C++)</h2>
+    <p>Приклад коду, який знаходить суму елементів масиву:</p>
+    <pre>
+<span class="code-comment"></span>
+#include &lt;iostream&gt;
+using namespace std;
+
+<span class="code-type">int</span> main() {
+    <span class="code-type">int</span> numbers[] = {10, 20, 30, 40, 50};
+    <span class="code-type">int</span> sum = 0;
+
+    <span class="code-comment"></span>
+    <span class="code-keyword">for</span> (<span class="code-type">int</span> i : numbers) {
+        sum += i;
+    }
+
+    cout << "Сума елементів: " << sum << endl;
+    <span class="code-keyword">return</span> 0;
+}
+    </pre>
+	
+	 <p>
+        <a href="Lab5_Kyrylchenko05-3.html">Мої гіперпосилання</a>
+    </p>
+
+    <div class="signature">
+        Студент групи 303-ТН <b><u>Кирильченко Д.Р.</u></b>
+    </div>
+	
+	    <p class="signature">
+        Моя електронна адреса: 
+        <a href="kirilchenkoden@gmail.com">kirilchenkoden@gmail.com</a>
+    </p>
+</body>
+
+</html>
